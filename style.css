@@ -1,0 +1,177 @@
+:root {
+  --color-bg: #002b36; /* Solarized blue */
+  --color-fg: #839496; /* Solarized gray */
+  --color-h1: #cb4b16; /* Red */
+  --color-h2: #6c71c4; /* Purple */
+  --color-h3: #268bd2; /* Blue */
+  --color-h4: #6c71c4; /* Purple */
+}
+
+h2 {
+  font-size: 19.5px;
+  text-align: center;
+}
+article h3 {
+  color: var(--color-h3);
+}
+
+article h4 {
+  color: var(--color-h4);
+}
+html {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  font-family: "VT323";
+  font-weight: bold;
+}
+
+body {
+  display: grid;
+  grid-gap: 0px;
+  width: 1024px;
+  grid-template-columns: repeat(12, 85px);
+  grid-template-rows: auto auto 50px;
+  float: center;
+  margin: auto;
+}
+
+a {
+  color: var(--color-h2);
+}
+
+header,
+footer {
+  grid-column: 1 / 13;
+  margin: auto;
+}
+
+footer {
+  width: 748px;
+}
+
+header {
+  margin-bottom: 25px;
+}
+
+nav {
+  width: 80%;
+  font-size: 18px;
+  grid-row: 3;
+  grid-column: 1/ 13;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav a {
+  margin: auto;
+  float: left;
+  padding: auto;
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+}
+
+article {
+  font-family: "Space Mono";
+  text-align: justify;
+  background-color: #002b36;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+article p {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+article ul {
+  font-size: 13px;
+  margin: 0px;
+}
+
+article h2 {
+  font-family: "VT323";
+  color: var(--color-h1);
+}
+
+aside {
+  vertical-align: top;
+  grid-column: span 3 / 13;
+  grid-row: 2;
+  font-family: "VT323";
+  text-align: justify;
+  padding: 5px 30px 5px 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+figure {
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
+}
+
+#leftcolumn {
+  grid-column: 1/ 9;
+  grid-row: 2;
+  right-padding: 30px;
+}
+
+#mainTitle {
+  color: var(--color-h1);
+  font-size: 60px;
+  font-family: "VT323";
+  display: inline-block;
+  margin: 15px;
+}
+#subTitle {
+  color: var(--color-h3);
+}
+
+#HarshPicture > img {
+  border-radius: 25px;
+  width: 100%;
+}
+
+td,
+th {
+  width: 25%;
+  text-align: left;
+}
+
+.keyPoints {
+  color: var(--color-h2);
+  list-style-type: square;
+  font-size: 15px;
+}
+
+/*.introarticle p {
+  text-align: justify;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.contentArticle {
+  margin-top: 20px;
+}
+
+.contentArticle * {
+  text-align: left;
+  margin: 1.5px;
+}
+.contentArticle h2 {
+  text-align: center;
+}
+.resumeItem {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.resumeItem h3 {
+  font-size: 15.21px;
+}
+
+.resumeItem h4 {
+  font-size: 13px;
+}*/
