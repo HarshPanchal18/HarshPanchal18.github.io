@@ -1319,13 +1319,23 @@ textarea.form-input::-webkit-resizer {
  * responsive larger than 450px screen
  */
 
-@media (min-width: 450px) {
+@media (min-width: 0px) {
   /**
    * client
    */
 
   .clients-item {
     min-width: calc(33.33% - 10px);
+  }
+
+  .avatar-box {
+    border-radius: 25px;
+  }
+
+  .avatar-box img {
+    border-radius: 20px;
+    margin-top: -30px;
+    align-content: center;
   }
 
   /**
@@ -1336,6 +1346,38 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
   }
+
+}
+
+@media (min-width: 450px) {
+  /**
+   * client
+   */
+
+  .clients-item {
+    min-width: calc(33.33% - 10px);
+  }
+
+  .avatar-box {
+    border-radius: 25px;
+  }
+
+  .avatar-box img {
+    border-radius: 20px;
+    height: 225px !important;
+    width: 225px !important;
+  }
+
+  /**
+   * #PORTFOLIO, BLOG
+   */
+
+  .project-img,
+  .blog-banner-box {
+    height: auto;
+  }
+
+
 }
 
 /**
@@ -1415,9 +1457,9 @@ textarea.form-input::-webkit-resizer {
     gap: 25px;
   }
 
-  /*.avatar-box {
-    border-radius: 1000px;
-  }*/
+  .avatar-box {
+    border-radius: 25px;
+  }
 
   .avatar-box img {
     border-radius: 20px;
