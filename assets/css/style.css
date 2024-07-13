@@ -1206,7 +1206,6 @@ main {
   width: 100%;
   height: 100%;
   border: none;
-  filter: grayscale(1) invert(1);
 }
 
 .contact-form {
@@ -1328,6 +1327,11 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
+  .sidebar {
+    max-height: 140px;
+    margin-bottom: 30px;
+  }
+
   .avatar-box {
     border-radius: 25px;
   }
@@ -1358,14 +1362,22 @@ textarea.form-input::-webkit-resizer {
     min-width: calc(33.33% - 10px);
   }
 
+  .sidebar {
+    max-height: 140px;
+    margin-bottom: 30px;
+  }
+
   .avatar-box {
     border-radius: 25px;
+    margin-top: 20px;
   }
 
   .avatar-box img {
     border-radius: 20px;
-    height: 225px !important;
-    width: 225px !important;
+    width: 100px;
+    height: 100px;
+    /* height: 225px !important;
+    width: 225px !important; */
   }
 
   /**
@@ -1376,7 +1388,6 @@ textarea.form-input::-webkit-resizer {
   .blog-banner-box {
     height: auto;
   }
-
 
 }
 
@@ -1445,7 +1456,7 @@ textarea.form-input::-webkit-resizer {
    */
 
   .sidebar {
-    max-height: 180px;
+    max-height: 210px;
     margin-bottom: 30px;
   }
 
@@ -1463,9 +1474,9 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     border-radius: 20px;
-    height: 225px !important;
-    width: 225px !important;
-    margin-top: -30px;
+    height: 140px !important;
+    width: 140px !important;
+    margin-top: -40px;
   }
 
   .info-content .name {
@@ -2006,7 +2017,8 @@ textarea.form-input::-webkit-resizer {
   }
 
   .avatar-box img {
-    width: 150px;
+    min-width: 215px;
+    min-height: 215px;
   }
 
   .info-content .name {
