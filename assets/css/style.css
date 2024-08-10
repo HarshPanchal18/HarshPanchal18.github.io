@@ -339,7 +339,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
   position: relative;
-  /* overflow: hidden; */
+  margin-top: 20px;
 }
 
 .logo {
@@ -1350,13 +1350,30 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box {
     border-radius: 25px;
+    margin-top: -5px;
   }
 
   /* .logo img, */
   .avatar-box img {
     border-radius: 20px;
-    margin-top: -30px;
-    align-content: center;
+    /* margin-top: 0px; */
+    height: 100px;
+    width: 100px;
+  }
+
+  .logo {
+    position: absolute;
+    /* Initially position the logo outside the figure */
+    top: -100%;
+    margin-top: -40px;
+    /* Add a smooth transition effect */
+    transition: top 0.3s;
+  }
+
+  .avatar-box:hover .logo {
+    margin-top: 0px;
+    /* Move the logo from top to down on hover */
+    top: 0;
   }
 
   /**
@@ -1386,11 +1403,10 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box {
     border-radius: 25px;
-    margin-top: 20px;
+    margin-top: -5px;
   }
 
   .avatar-box:hover .logo {
-    margin-top: 30px;
     /* Move the logo from top to down on hover */
     top: 0;
   }
@@ -1499,11 +1515,11 @@ textarea.form-input::-webkit-resizer {
     border-radius: 20px;
     height: 140px !important;
     width: 140px !important;
-    margin-top: -40px;
+    margin-top: -20px;
   }
 
   .avatar-box:hover .logo {
-    margin-top: 40px;
+    margin-top: 20px;
     /* Move the logo from top to down on hover */
     top: 0;
   }
