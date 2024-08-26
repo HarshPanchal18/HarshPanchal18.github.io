@@ -136,3 +136,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+function sendEmail() {
+  const messageParams = {
+    fullname: document.getElementById("fullname").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  console.log(messageParams.name, messageParams.email, messageParams.message);
+
+  emailjs.send("service_lbjqwkj", "template_r012r3c", messageParams).then(
+    function (response) {
+      console.log("Success!", response.status, response.text);
+      document.getElementById("contact-form").reset();
+      showToast();
+    },
+    function (error) {
+      console.log("Failed...", error);
+    }
+  );
+}
+
+function showToast() {
+  var snackbar = document.getElementById("snackbar");
+  snackbar.className = "show";
+
+  // After 3 seconds, remove the show class from DIV
+  setTimeout(function () {
+    snackbar.className = snackbar.className.replace("show", "");
+  }, 3000);
+}

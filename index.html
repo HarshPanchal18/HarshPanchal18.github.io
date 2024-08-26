@@ -12,10 +12,23 @@
     <!-- - custom css link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
     <!-- - google font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" />
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+      (function() {
+        emailjs.init({ publicKey: "R3isQR6enA-NZEc5s"})
+      })();
+    </script>
 
   </head>
 
@@ -28,7 +41,7 @@
 
           <div>
               <figure class="avatar-box">
-                <img src="assets/images/my-avatar.jpg" alt="Harsh Panchal" />
+                <img src="assets/images/my-avatar.jpg" loading="eager" alt="Harsh Panchal" />
                 <figure class="logo">
                   <img src="assets/images/fav11.ico" alt="Home Logo" />
                 </figure>
@@ -739,20 +752,24 @@
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+            <form id="contact-form" onsubmit="sendEmail(); return false;" action="" class="form" data-form>
               <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input/>
-                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input/>
+                <input id="fullname" type="text" name="fullname" class="form-input" required placeholder="Full name" data-form-input/>
+                <input id="email" type="text" name="email" class="form-input" required placeholder="Email address" data-form-input/>
               </div>
 
-              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea id="message" name="message" class="form-input" required placeholder="Your Message" data-form-input></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
+              <button class="form-btn" type="submit" data-form-btn>
                 <ion-icon name="paper-plane"></ion-icon>
                 <span>Send Message</span>
               </button>
 
             </form>
+
+            <!-- The snackbar -->
+            <div id="snackbar">Email sent successfully!</div>
+
           </section>
         </article>
 
@@ -767,5 +784,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
   </body>
 </html>
