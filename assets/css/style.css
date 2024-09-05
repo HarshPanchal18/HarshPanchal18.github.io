@@ -302,6 +302,12 @@ article.active {
   z-index: -1;
 }
 
+.highlights {
+  color: var(--orange-yellow-crayola);
+  font-weight: bold;
+  /* border-bottom: 2px dotted var(--white-1) !important; */
+}
+
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
