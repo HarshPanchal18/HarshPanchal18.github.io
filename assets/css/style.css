@@ -345,6 +345,7 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
   position: relative;
+  filter: grayscale(100%);
   margin-top: 20px;
 }
 
@@ -353,13 +354,14 @@ main {
   /* Initially position the logo outside the figure */
   top: -100%;
   /* Add a smooth transition effect */
-  transition: top 0.3s;
+  /* transition: top 0.3s; */
 }
 
-.avatar-box:hover .logo {
-  margin-top: 40px;
+.avatar-box:hover {
+  /* margin-top: 40px; */
+  filter: grayscale(0%);
   /* Move the logo from top to down on hover */
-  top: 0;
+  /* top: 0; */
 }
 
 .info-content .name {
