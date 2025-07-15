@@ -1335,6 +1335,36 @@ textarea.form-input::-webkit-resizer {
   background: var(--bg-gradient-jet);
 }
 
+.book-item {
+  display: inline-table;
+  min-height: 20px !important;
+}
+
+.book-item img {
+  height: 240px;
+  border-radius: 12px;
+  margin: 12px 16px;
+  filter: grayscale(50%);
+  transition: height 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.book-item img:hover{
+  height: 260px;
+  width: auto;
+  border-radius: 8px;
+  margin: 12px 16px;
+  transition: height 0.3s ease-in-out;
+  filter: grayscale(0%);
+}
+
+.book-item p {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  color: white;
+  font-size: medium;
+}
+
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
