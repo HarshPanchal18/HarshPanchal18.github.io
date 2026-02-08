@@ -485,6 +485,13 @@ main {
 }
 
 .social-item .social-link:hover {
+  color: var(--light-gray-70);
+  font-size: 18px;
+  transition: height 0.3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+.social-item .social-link:hover {
   color: var(--light-gray);
 }
 
@@ -553,7 +560,7 @@ main {
  */
 
 .service {
-  margin-bottom: 35px;
+  margin-bottom: 12px;
 }
 
 .service-title {
@@ -865,7 +872,7 @@ main {
   font-size: var(--fs-4);
   line-height: 1.3;
   margin-bottom: 7px;
-  text-decoration: dotted underline;
+  /* text-decoration: dotted underline; */
 }
 
 .timeline-list span {
@@ -1274,8 +1281,7 @@ main {
 
 textarea.form-input {
   min-height: 100px;
-  height: 120px;
-  max-height: 200px;
+  height: 240px;
   resize: vertical;
   margin-bottom: 25px;
 }
@@ -1637,7 +1643,7 @@ textarea.form-input::-webkit-resizer {
   }
 
   .about-text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   /* service */
